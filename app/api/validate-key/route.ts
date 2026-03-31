@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse } from "next/server"
 
 // Validates a Gumroad license key against their API.
-// Gumroad marks subscription keys as "disabled" when a subscription lapses —
-// so this check enforces active subscription status in real-time.
+// Uses product_id (not permalink) as required by Gumroad's v2 API.
+// Subscription keys are invalid when cancelled or payment fails.
 
 const GUMROAD_API = "https://api.gumroad.com/v2/licenses/verify"
-const PRODUCT_PERMALINK = process.env.GUMROAD_PRODUCT_PERMALINK
+const GUMROAD_PRODUCT_ID = process.env.GUMROAD_PRODUCT_ID
 
 export interface ValidateKeyResponse {
   valid: boolean
@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
       )
     }
 
-    if (!PRODUCT_PERMALINK) {
+    if (!GUMROAD_PRODUCT_ID) {
       // Dev fallback: accept any well-formed key when env var is not set
       const isWellFormed = /^[A-Z0-9]{8}-[A-Z0-9]{8}-[A-Z0-9]{8}-[A-Z0-9]{8}$/i.test(key.trim())
       return NextResponse.json<ValidateKeyResponse>({ valid: isWellFormed })
@@ -33,9 +33,9 @@ export async function POST(req: NextRequest) {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({
-        product_permalink: PRODUCT_PERMALINK,
+        product_id: GUMROAD_PRODUCT_ID,
         license_key: key.trim(),
-        increment_uses_count: "false", // don't count validations as uses
+        increment_uses_count: "false",
       }),
     })
 
@@ -48,7 +48,7 @@ export async function POST(req: NextRequest) {
       })
     }
 
-    // A subscription key is disabled when the subscription is cancelled or payment fails
+    // Subscription lapsed — cancelled or payment failed
     if (data.purchase?.subscription_cancelled_at || data.purchase?.subscription_failed_at) {
       return NextResponse.json<ValidateKeyResponse>({
         valid: false,
@@ -65,7 +65,6 @@ export async function POST(req: NextRequest) {
   }
 }
 
-// Subset of Gumroad's license verify response we care about
 interface GumroadResponse {
   success: boolean
   purchase?: {
