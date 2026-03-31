@@ -4,7 +4,7 @@ import { useState } from "react"
 import { saveKey, validateKeyWithServer } from "@/lib/license"
 
 // Update this URL once the Gumroad subscription product is created
-const GUMROAD_SUBSCRIPTION_URL = "https://holacommit.gumroad.com/l/coldcopy"
+const GUMROAD_SUBSCRIPTION_URL = "https://tarkusconsulting.gumroad.com/l/ColdCopyAI"
 
 interface PaywallProps {
   onUnlock: () => void
