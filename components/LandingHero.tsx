@@ -32,7 +32,7 @@ export function LandingHero({ onTryNow }: { onTryNow: () => void }) {
             Try free — no signup →
           </button>
           <p className="text-sm text-gray-400">
-            A Fiverr copywriter charges $75/sequence. We charge $39. Once.
+            A Fiverr copywriter charges $75/sequence. We charge $19/month — cancel anytime.
           </p>
         </div>
       </div>

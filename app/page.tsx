@@ -102,7 +102,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="text-sm font-medium text-gray-600 hover:text-gray-900 border border-gray-200 hover:border-gray-400 rounded-lg px-3 py-1.5 transition-colors"
             >
-              Get lifetime access — $39
+              Subscribe — $19/month
             </a>
           )}
           {unlocked && (
