@@ -97,7 +97,7 @@ export default function Home() {
           <span className="font-bold text-gray-900 text-lg">ColdCopy</span>
           {!unlocked && (
             <a
-              href="https://tarkusconsulting.gumroad.com/l/ColdCopyAI"
+              href="https://tarkusconsulting.gumroad.com/l/ColdCopyPro"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-medium text-gray-600 hover:text-gray-900 border border-gray-200 hover:border-gray-400 rounded-lg px-3 py-1.5 transition-colors"
