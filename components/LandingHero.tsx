@@ -5,7 +5,7 @@ const BEFORE = {
 
 const AFTER = {
   subject: "Noticed something on your site",
-  body: "Sarah — your onboarding flow stops at step 3. Most users who don't complete that step churn in 30 days.\n\nWe fixed that exact problem for Loom and Notion. Reduced their 30-day churn by 23% in one quarter.\n\nWorth a 20-minute call this week?",
+  body: "Sarah — we noticed your onboarding flow stops at step 3. Most users who don't complete that step churn in 30 days.\n\nWe fixed that exact problem for Loom and Notion. Reduced their 30-day churn by 23% in one quarter.\n\nWorth a 20-minute call this week?",
 }
 
 export function LandingHero({ onTryNow }: { onTryNow: () => void }) {
