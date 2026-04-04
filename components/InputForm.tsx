@@ -33,10 +33,13 @@ export function InputForm({ onSubmit, isLoading }: InputFormProps) {
     if (!prospectUrl.trim()) {
       newErrors.prospectUrl = "Required"
     } else {
+      const normalized = prospectUrl.trim().match(/^https?:\/\//)
+        ? prospectUrl.trim()
+        : `https://${prospectUrl.trim()}`
       try {
-        new URL(prospectUrl)
+        new URL(normalized)
       } catch {
-        newErrors.prospectUrl = "Enter a valid URL (include https://)"
+        newErrors.prospectUrl = "Enter a valid URL (e.g. acmecorp.com)"
       }
     }
     setErrors(newErrors)
@@ -46,10 +49,13 @@ export function InputForm({ onSubmit, isLoading }: InputFormProps) {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     if (!validate()) return
+    const normalizedUrl = prospectUrl.trim().match(/^https?:\/\//)
+      ? prospectUrl.trim()
+      : `https://${prospectUrl.trim()}`
     onSubmit({
       offer: offer.trim(),
       icp: icp.trim(),
-      prospectUrl: prospectUrl.trim(),
+      prospectUrl: normalizedUrl,
       prospectName: prospectName.trim() || undefined,
       prospectNotes: prospectNotes.trim() || undefined,
       tone,
@@ -93,7 +99,7 @@ export function InputForm({ onSubmit, isLoading }: InputFormProps) {
         error={errors.prospectUrl}
       >
         <input
-          type="url"
+          type="text"
           value={prospectUrl}
           onChange={(e) => setProspectUrl(e.target.value)}
           placeholder="https://acmecorp.com"
