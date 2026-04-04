@@ -41,10 +41,9 @@ export function Paywall({ onUnlock }: PaywallProps) {
   return (
     <div className="border border-gray-200 rounded-2xl p-8 bg-white space-y-6">
       <div className="text-center space-y-2">
-        <p className="text-2xl font-bold text-gray-900">You&apos;ve used your free sequence</p>
+        <p className="text-2xl font-bold text-gray-900">Ready to fill your pipeline?</p>
         <p className="text-gray-500 text-sm max-w-sm mx-auto">
-          A Fiverr copywriter charges $75 for one sequence.
-          Get unlimited sequences for $19/month.
+          That took 8 seconds. Imagine doing that for every prospect on your list.
         </p>
       </div>
 
@@ -56,10 +55,10 @@ export function Paywall({ onUnlock }: PaywallProps) {
         </div>
         <ul className="space-y-1.5 text-sm text-gray-600">
           {[
-            "Unlimited 5-email sequences",
-            "Automatic prospect research (URL → context)",
-            "English + Spanish",
-            "CSV export for Instantly / Lemlist",
+            "Unlimited prospects, unlimited sequences",
+            "Each email reads like you spent 20 min on research",
+            "Works in English and Spanish",
+            "Export to Instantly or Lemlist in one click",
             "Cancel anytime — no contracts",
           ].map((feature) => (
             <li key={feature} className="flex items-center gap-2">
@@ -74,7 +73,7 @@ export function Paywall({ onUnlock }: PaywallProps) {
           rel="noopener noreferrer"
           className="block w-full bg-gray-900 hover:bg-gray-700 text-white font-semibold rounded-xl py-3 text-center transition-colors"
         >
-          Subscribe — $19/month →
+          Get unlimited sequences — $19/month →
         </a>
         <p className="text-xs text-center text-gray-400">
           Also available: $150/year (save 34%)

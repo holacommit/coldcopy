@@ -14,25 +14,24 @@ export function LandingHero({ onTryNow }: { onTryNow: () => void }) {
       <div className="text-center space-y-4">
         <div className="inline-flex items-center gap-2 bg-gray-100 text-gray-600 text-xs font-medium px-3 py-1.5 rounded-full">
           <span className="w-1.5 h-1.5 bg-green-500 rounded-full" />
-          Outreach writer on-demand
+          Cold email that gets replies
         </div>
         <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
-          A full 5-email sequence,{" "}
-          <span className="text-gray-400">personalized to every prospect</span>{" "}
-          — in 8 seconds.
+          Book meetings with people{" "}
+          <span className="text-gray-400">who&apos;ve never heard of you.</span>
         </h1>
         <p className="text-lg text-gray-500 max-w-xl mx-auto">
-          Stop leaving follow-ups unwritten. Paste a URL, get a complete sequence. Send from wherever you already work.
+          Paste a prospect&apos;s URL — ColdCopy reads their site and writes a personalized 5-email sequence in 8 seconds. Sounds like research. Costs less than one Fiverr sequence.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
           <button
             onClick={onTryNow}
             className="bg-gray-900 hover:bg-gray-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
           >
-            Try free — no signup →
+            Write my first sequence free →
           </button>
           <p className="text-sm text-gray-400">
-            A Fiverr copywriter charges $75/sequence. We charge $19/month — cancel anytime.
+            No signup. No credit card. Ready in 8 seconds.
           </p>
         </div>
       </div>
