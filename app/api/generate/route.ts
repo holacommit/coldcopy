@@ -8,11 +8,16 @@ const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 })
 
-// Simple in-memory rate limiter: max 20 generations per IP per day.
+// Simple in-memory rate limiter: max 30 generations per IP per day.
 // Resets on each Vercel cold start — intentional for MVP.
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>()
 const RATE_LIMIT = 30
 const RATE_WINDOW_MS = 24 * 60 * 60 * 1000 // 24 hours
+
+// Server-side free trial tracker: one free generation per IP.
+// Persists for the lifetime of the serverless instance.
+// Immune to localStorage clearing, incognito mode, and browser switching.
+const freeTrialUsedSet = new Set<string>()
 
 function isRateLimited(ip: string): boolean {
   const now = Date.now()
@@ -29,6 +34,14 @@ function isRateLimited(ip: string): boolean {
   return false
 }
 
+function hasUsedFreeTrial(ip: string): boolean {
+  return freeTrialUsedSet.has(ip)
+}
+
+function markFreeTrialUsed(ip: string): void {
+  freeTrialUsedSet.add(ip)
+}
+
 export interface GenerateRequest {
   offer: string
   icp: string
@@ -37,6 +50,7 @@ export interface GenerateRequest {
   prospectNotes?: string
   tone: Tone
   language: Language
+  licenseKey?: string
 }
 
 export async function POST(req: NextRequest) {
@@ -51,6 +65,16 @@ export async function POST(req: NextRequest) {
 
   try {
     const body = await req.json() as GenerateRequest
+
+    // Server-side free trial enforcement — immune to incognito/localStorage tricks.
+    // If this IP has already used its free generation, require a valid license key.
+    const hasKey = !!body.licenseKey?.trim()
+    if (!hasKey && hasUsedFreeTrial(ip)) {
+      return NextResponse.json(
+        { error: "free_trial_used" },
+        { status: 402 }
+      )
+    }
 
     const validationError = validateRequest(body)
     if (validationError) {
@@ -95,6 +119,9 @@ export async function POST(req: NextRequest) {
         { status: 500 }
       )
     }
+
+    // Mark free trial as used for this IP (no-op if they have a key)
+    if (!hasKey) markFreeTrialUsed(ip)
 
     return NextResponse.json({ emails: result.emails })
   } catch (err) {

@@ -56,21 +56,21 @@ export default function Home() {
   }
 
   async function handleGenerate(data: GenerateRequest) {
-    if (!canGenerate()) {
-      setState({ view: "paywall" })
-      return
-    }
-
     setState({ view: "loading" })
 
     try {
       const res = await fetch("/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, licenseKey: loadKey() ?? undefined }),
       })
 
       const json = await res.json()
+
+      if (res.status === 402 || json.error === "free_trial_used") {
+        setState({ view: "paywall" })
+        return
+      }
 
       if (!res.ok || json.error) {
         setState({ view: "error", message: json.error ?? "Something went wrong. Try again." })
