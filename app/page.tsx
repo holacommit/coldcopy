@@ -154,6 +154,13 @@ export default function Home() {
         <footer className="text-center text-xs text-gray-400 space-y-1 pt-8 border-t border-gray-100">
           <p>ColdCopy — outreach writer on-demand</p>
           <p>Paste a URL. Get 5 emails. Send from anywhere.</p>
+          <p className="pt-1">
+            <a href="/privacy" className="hover:text-gray-600">Privacy Policy</a>
+            {" · "}
+            <a href="/terms" className="hover:text-gray-600">Terms of Use</a>
+            {" · "}
+            <a href="/data-compliance" className="hover:text-gray-600">Data Compliance</a>
+          </p>
         </footer>
       </div>
     </main>
