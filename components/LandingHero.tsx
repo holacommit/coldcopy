@@ -1,11 +1,11 @@
 const BEFORE = {
   subject: "Quick question",
-  body: "Hi Sarah,\n\nI hope this email finds you well. I wanted to reach out because I think our solution could be a great fit for your company.\n\nWe help businesses like yours improve their customer success metrics. Would you be open to a quick 15-minute call to discuss how we might be able to help?\n\nLooking forward to hearing from you.",
+  body: "Hi Sarah,\n\nI hope this email finds you well. I wanted to reach out because I think our solution could be a great fit for your store.\n\nWe work with boutiques like yours and I think there's a real opportunity here. Would you be open to a quick 15-minute call?\n\nLooking forward to hearing from you.",
 }
 
 const AFTER = {
-  subject: "Noticed something on your site",
-  body: "Sarah — we noticed your onboarding flow stops at step 3. Most users who don't complete that step churn in 30 days.\n\nWe fixed that exact problem for Loom and Notion. Reduced their 30-day churn by 23% in one quarter.\n\nWorth a 20-minute call this week?",
+  subject: "You carry 3 candle brands — none rotate seasonally",
+  body: "Sarah, I noticed you stock 3 soy candle brands but none of them swap scents by season. Our fall collection sold out in 11 days at Gather & Co two blocks from you. I'm looking for one more stockist in your neighborhood before October. Want me to send samples?",
 }
 
 export function LandingHero({ onTryNow }: { onTryNow: () => void }) {
@@ -58,7 +58,7 @@ function BeforeAfter() {
           <p className="text-xs text-gray-500 font-medium">Body</p>
           <p className="text-sm text-gray-600 whitespace-pre-wrap leading-relaxed">{BEFORE.body}</p>
         </div>
-        <p className="text-xs text-red-400">45 min to write • Sounds like everyone else</p>
+        <p className="text-xs text-red-400">35 min to write • She didn&apos;t reply</p>
       </div>
 
       <div className="border border-green-100 bg-green-50 rounded-2xl p-5 space-y-3">
