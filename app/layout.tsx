@@ -92,68 +92,6 @@ export default function RootLayout({
             ],
             "screenshot": "https://coldcopy.pro/assets/og-image.png",
           },
-          {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What is ColdCopy?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "ColdCopy is a cold email sequence generator built for Shopify and ecommerce founders. You paste a prospect's website URL, describe your offer, and ColdCopy generates a complete personalized 5-email outreach sequence in 8 seconds — with subject lines, body copy, timing, and CTAs ready to send.",
-                },
-              },
-              {
-                "@type": "Question",
-                "name": "How does ColdCopy work?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Go to coldcopy.pro, paste your prospect's website URL, describe what you sell and who you help, and hit generate. ColdCopy reads the prospect's site, extracts their products, positioning, and business model, then writes a 5-email sequence with real context from their business. Takes 8 seconds.",
-                },
-              },
-              {
-                "@type": "Question",
-                "name": "Is ColdCopy different from Instantly or Lemlist?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes. Instantly and Lemlist are email sending platforms — they handle deliverability, warmup, and inbox management. ColdCopy only writes the emails. It generates personalized sequences from a URL, then you send them from whatever tool you already use: Gmail, Instantly, Lemlist, Saleshandy, or LinkedIn DMs.",
-                },
-              },
-              {
-                "@type": "Question",
-                "name": "How much does ColdCopy cost?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "ColdCopy costs $19/month for unlimited sequences. Your first sequence is free with no signup and no credit card required. Cancel anytime.",
-                },
-              },
-              {
-                "@type": "Question",
-                "name": "Who is ColdCopy built for?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "ColdCopy is built for Shopify and DTC ecommerce founders doing $20k-200k/month who handle their own outreach. If you know you should be sending cold emails but don't have time to research each prospect and write personalized sequences, ColdCopy does it in 8 seconds per prospect.",
-                },
-              },
-              {
-                "@type": "Question",
-                "name": "What tools does ColdCopy integrate with?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "ColdCopy exports sequences as CSV files compatible with Instantly, Lemlist, Saleshandy, Woodpecker, and any other cold email sending tool. Sequences are also copy/paste ready for Gmail, Outlook, LinkedIn DMs, or WhatsApp.",
-                },
-              },
-              {
-                "@type": "Question",
-                "name": "Can ColdCopy write cold emails for supplement or wellness brands?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes. ColdCopy works for any ecommerce vertical — supplements, wellness, beauty, skincare, pet products, fitness apparel, and more. It reads the prospect's actual website and references their specific products, pricing, and business model in every email.",
-                },
-              },
-            ],
-          },
         ])}
       </Script>
       <Script
