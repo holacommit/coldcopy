@@ -208,8 +208,12 @@ export function VerticalLanding({ content }: { content: VerticalContent }) {
 
       {/* Footer */}
       <footer className="border-t border-gray-200 py-8">
-        <div className="max-w-3xl mx-auto px-6 flex items-center justify-between text-xs text-gray-400">
-          <span>ColdCopy</span>
+        <div className="max-w-3xl mx-auto px-6 space-y-3 text-xs text-gray-400">
+          <div className="space-y-1">
+            <p className="font-medium text-gray-500">ColdCopy — your outreach writer on-demand</p>
+            <p>Paste a URL. Get 5 emails. Send from anywhere.</p>
+            <p>Need help? <a href="mailto:info@coldcopy.pro" className="hover:text-gray-600">info@coldcopy.pro</a></p>
+          </div>
           <div className="flex gap-4">
             <Link href="/privacy" className="hover:text-gray-600">Privacy</Link>
             <Link href="/terms" className="hover:text-gray-600">Terms</Link>

@@ -152,8 +152,9 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="text-center text-xs text-gray-400 space-y-1 pt-8 border-t border-gray-100">
-          <p>ColdCopy — outreach writer on-demand</p>
+          <p>ColdCopy — your outreach writer on-demand</p>
           <p>Paste a URL. Get 5 emails. Send from anywhere.</p>
+          <p>Need help? <a href="mailto:info@coldcopy.pro" className="hover:text-gray-600">info@coldcopy.pro</a></p>
           <p className="pt-1">
             <a href="/privacy" className="hover:text-gray-600">Privacy Policy</a>
             {" · "}
