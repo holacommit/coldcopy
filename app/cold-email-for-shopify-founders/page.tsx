@@ -21,14 +21,14 @@ const content: VerticalContent = {
   heroTagline: "The cold email tool built for Shopify founders",
   heroHeadline: "The cold email tool Shopify founders use to pitch buyers, retailers, and partners",
   heroDescription:
-    "You built your Shopify store. Now you need stockists, wholesale accounts, and retail partners. ColdCopy is the cold email tool built for Shopify founders doing their own outreach — paste any buyer or retailer URL, get a personalized 5-email sequence in 8 seconds. No copywriting skills needed. No Shopify integration required.",
+    "You built your Shopify store. Now you need to get your products into boutiques, retail stores, and wholesale accounts. ColdCopy is the cold email tool built for Shopify founders doing their own outreach — paste any buyer or retailer URL, get a personalized 5-email sequence in 8 seconds. No copywriting skills needed. No Shopify integration required.",
   painSectionTitle: "Why Shopify founders struggle to scale cold outreach",
 
   painPoints: [
     {
       title: "Every retail buyer already has a full shelf",
       description:
-        "Independent boutiques, specialty stores, and wholesale buyers work with 5-10 brands per category. The ones that get a meeting send pitches that reference the buyer's actual product mix, price positioning, and gaps — not a generic deck. ColdCopy reads each prospect's site so your pitch sounds like it was written specifically for them.",
+        "Independent boutiques, specialty stores, and wholesale buyers work with 5-10 brands per category. The ones that get their Shopify product into retail stores send pitches that reference the buyer's actual product mix, price positioning, and gaps — not a generic deck. ColdCopy reads each prospect's site so your wholesale outreach email sounds like it was written specifically for them.",
     },
     {
       title: "Buyers know a generic email in three seconds",
@@ -38,9 +38,16 @@ const content: VerticalContent = {
       statSource: "Woodpecker, 2024 Cold Email Benchmarks",
     },
     {
+      title: "Personalized outreach isn't just more polite — it's measurably more effective",
+      description:
+        "When you pitch a boutique buyer with an email that references their store specifically — the brands they carry, the price tier they serve, the category gap on their floor — you're not just being thoughtful. You're removing the buyer's biggest objection: \"this person doesn't know my business.\" That's why personalized wholesale outreach emails consistently outperform templates across every industry. The research is the hard part. ColdCopy does it automatically.",
+      stat: "Cold emails with personalized first lines see 30% higher open rates and 2-3x more replies",
+      statSource: "Backlinko, 2024 Cold Email Study",
+    },
+    {
       title: "You can research one prospect in 30 minutes — or all of them in seconds",
       description:
-        "A good pitch to a boutique buyer starts with: what brands do they carry? What's missing from their floor? What's their price point? That's 30 minutes per prospect before you've written a word. ColdCopy does that research from their website in 8 seconds, then writes the emails.",
+        "The best way to pitch a boutique buyer is to know their store before you write a single word: what brands do they carry, what's missing from their floor, what's their price point. That's 30 minutes per prospect. To pitch product to retail stores at scale, you need to cut that to zero. ColdCopy reads any retailer's website in 8 seconds and writes the sequence for you.",
     },
   ],
 
@@ -104,6 +111,21 @@ const content: VerticalContent = {
       question: "What can I use ColdCopy for as a Shopify store owner?",
       answer:
         "Shopify store owners use ColdCopy for wholesale outreach to boutiques and retailers, pitching influencers and content creators for collaborations, reaching press and media contacts, approaching corporate buyers for bulk orders, and building partnerships with complementary brands. Paste any prospect's URL and ColdCopy writes a sequence tailored to their specific site.",
+    },
+    {
+      question: "Is ColdCopy worth it for Shopify founders?",
+      answer:
+        "For Shopify founders doing their own wholesale and retail outreach, ColdCopy replaces 30-45 minutes of manual store research per prospect with an 8-second automated read. Personalized cold emails that reference a buyer's actual product mix and gaps get 2-3x higher reply rates than generic templates (Woodpecker, 2024). At $19/month with unlimited sequences, it pays for itself after the first meeting booked. The free trial — one complete 5-email sequence with no signup required — lets you judge the quality before spending anything.",
+    },
+    {
+      question: "What is the best way to pitch a boutique buyer?",
+      answer:
+        "The best way to pitch a boutique buyer is to reference what they already carry and identify what's missing. Research their current brand mix, price points, and category gaps before writing anything. Then lead with specificity: name a brand they stock, point to a gap your product fills, and make the next step low-friction (samples, a nearby stockist reference, a sell-through number). Keep it under 5 sentences. ColdCopy automates the research step — it reads the boutique's site and writes a wholesale outreach email sequence built around their specific store.",
+    },
+    {
+      question: "How do I get my Shopify product into boutiques and retail stores?",
+      answer:
+        "Getting a Shopify product into boutiques requires three things: identifying the right retail buyers, personalizing your pitch to their specific store, and following up consistently with a structured sequence. Most Shopify founders skip personalization because researching each store's brand mix takes 30-45 minutes per prospect. ColdCopy automates that research — paste any retailer's URL, describe your offer, and get a personalized wholesale outreach email sequence in 8 seconds. That makes it practical to pitch 20-30 retail stores per week instead of 3-4.",
     },
   ],
 }
