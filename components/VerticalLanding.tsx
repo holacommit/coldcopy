@@ -14,7 +14,9 @@ export interface VerticalContent {
   vertical: string
   verticalSlug: string
   heroTagline: string
+  heroHeadline?: string
   heroDescription: string
+  painSectionTitle?: string
   painPoints: {
     title: string
     description: string
@@ -52,7 +54,7 @@ export function VerticalLanding({ content }: { content: VerticalContent }) {
             Cold email that gets replies
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">
-            Cold Email Sequences for {content.vertical} Brands
+            {content.heroHeadline ?? `Cold Email Sequences for ${content.vertical} Brands`}
           </h1>
           <p className="text-lg text-gray-500 max-w-2xl">
             {content.heroDescription}
@@ -68,7 +70,7 @@ export function VerticalLanding({ content }: { content: VerticalContent }) {
         {/* Why [Vertical] Brands Need Cold Outreach */}
         <section className="py-12 border-t border-gray-200">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            Why {content.vertical} Brands Need Cold Outreach
+            {content.painSectionTitle ?? `Why ${content.vertical} Brands Need Cold Outreach`}
           </h2>
           <div className="space-y-6">
             {content.painPoints.map((point, i) => (

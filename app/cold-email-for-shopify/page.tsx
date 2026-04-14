@@ -18,27 +18,29 @@ export const metadata: Metadata = {
 const content: VerticalContent = {
   vertical: "Shopify",
   verticalSlug: "shopify",
-  heroTagline: "Cold email that gets replies",
+  heroTagline: "For everyone selling to Shopify stores",
+  heroHeadline: "Get your product in front of Shopify stores — without writing every pitch from scratch",
   heroDescription:
-    "Paste any Shopify store URL. ColdCopy reads their products, pricing, and positioning — then writes a 5-email cold sequence with real context from their business. 8 seconds. No copywriting skills needed.",
+    "You sell to Shopify merchants — apps, services, wholesale, or products. The hard part: every good pitch needs real research on their store. ColdCopy reads each store's site and writes a personalized 5-email sequence in 8 seconds. No research hours. No generic templates.",
+  painSectionTitle: "Why pitching Shopify stores is harder than it looks",
 
   painPoints: [
     {
-      title: "You're doing everything yourself",
+      title: "Researching every store eats your day",
       description:
-        "Running a Shopify store at $20-200k/month means you're the CEO, marketer, customer support, and sales team. Writing personalized cold emails for wholesale leads, partnerships, or B2B clients takes 30-45 minutes per prospect. That's time you don't have.",
+        "Before you write a single word, you need to know: what they sell, how they price it, what's missing from their store. For one prospect, that's 20-30 minutes of research. For 20 prospects, it's a week of work before you've sent anything.",
     },
     {
-      title: "Generic outreach gets ignored",
+      title: "Shopify owners can tell when you didn't look",
       description:
-        "\"I help ecommerce brands grow\" lands in the trash. Shopify store owners get dozens of these daily. The emails that get replies reference specific products, price points, or gaps in the prospect's store — things that prove you actually looked.",
+        "Store owners get dozens of pitches a week. The ones deleted in 3 seconds: \"I help ecommerce brands grow.\" The ones that get replies: emails that reference their specific products, their pricing, their gaps — proof you spent time on their store specifically.",
       stat: "Personalized cold emails get 2-3x higher reply rates than generic templates",
       statSource: "Woodpecker, 2024 Cold Email Benchmarks",
     },
     {
-      title: "Fiverr is slow and inconsistent",
+      title: "Fiverr won't research 50 stores for you",
       description:
-        "A single cold email sequence on Fiverr costs $50-75 and takes 3-5 days. The writer doesn't know your niche, doesn't research the prospect's store, and delivers generic copy you still need to rewrite. ColdCopy does it in 8 seconds for $19/month unlimited.",
+        "A copywriter on Fiverr can write one good sequence. They can't research 50 different Shopify stores and personalize each one. ColdCopy reads each store automatically and generates a fresh, specific sequence in 8 seconds — for $19/month unlimited.",
     },
   ],
 
@@ -61,19 +63,19 @@ const content: VerticalContent = {
 
   steps: [
     {
-      title: "Paste a Shopify store URL",
+      title: "Paste the URL of the store you want to pitch",
       description:
-        "Drop any Shopify store URL into ColdCopy. It reads their products, pricing, collections, brand positioning, and About page to understand the business.",
+        "Drop any Shopify store URL into ColdCopy. It reads their products, pricing, collections, and brand positioning — everything you'd spend 30 minutes researching manually.",
     },
     {
-      title: "Describe your offer",
+      title: "Describe what you sell to store owners",
       description:
-        "Tell ColdCopy what you sell and who you help. \"I help Shopify stores optimize their post-purchase email flows\" or \"We do wholesale for DTC brands.\"",
+        "Tell ColdCopy your offer. \"I sell wholesale candles to boutique retailers\" or \"I build email flows for Shopify stores\" — whatever you're pitching.",
     },
     {
-      title: "Get 5 emails in 8 seconds",
+      title: "Get 5 personalized emails in 8 seconds",
       description:
-        "ColdCopy generates a complete 5-email sequence with subject lines, personalized body copy, wait days, and CTAs. Export as CSV for Instantly or Lemlist, or copy/paste into Gmail.",
+        "ColdCopy writes a complete sequence referencing the store's actual products, gaps, and positioning. Export as CSV for Instantly or Lemlist, or copy/paste into Gmail.",
     },
   ],
 
