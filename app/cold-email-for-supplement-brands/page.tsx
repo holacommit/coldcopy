@@ -18,90 +18,92 @@ export const metadata: Metadata = {
 const content: VerticalContent = {
   vertical: "Supplement & Wellness",
   verticalSlug: "supplement-brands",
-  heroTagline: "Cold email that gets replies",
+  heroTagline: "For supplement & wellness brands doing their own outreach",
+  heroHeadline: "Get your supplement line into gyms, stores, and buyer inboxes — without writing every pitch yourself",
   heroDescription:
-    "Paste any supplement or wellness brand URL. ColdCopy reads their product line, ingredients, pricing, and subscription model — then writes a 5-email sequence that sounds like you spent 30 minutes on their site. Takes 8 seconds.",
+    "You built the product. Now you need to get it in front of buyers. ColdCopy reads each prospect's website — their current brands, price range, and customer focus — and writes a personalized 5-email outreach sequence in 8 seconds. No compliance headaches. No generic decks.",
+  painSectionTitle: "Why supplement brands struggle to scale outreach",
 
   painPoints: [
     {
-      title: "Supplement brands live and die by subscription LTV",
+      title: "Every retail buyer already has a supplement wall",
       description:
-        "Most supplement DTC brands make their money on repeat orders. But convincing new retail partners, influencers, or B2B buyers to carry your product requires personalized outreach that shows you understand their catalog and customer base — not a spray-and-pray pitch.",
-      stat: "Subscription supplement brands have 3-5x higher LTV than one-time purchase models",
-      statSource: "Recharge, 2024 Subscription Commerce Report",
+        "Health food stores, gyms, and corporate wellness programs carry 5-10 supplement brands max. The ones that get in send pitches that reference the buyer's actual product mix and gaps — not a one-size-fits-all deck. ColdCopy reads each prospect's site so your pitch sounds like it was written for them specifically.",
     },
     {
-      title: "Compliance makes generic outreach risky",
+      title: "Compliance anxiety makes most outreach too safe to work",
       description:
-        "Supplement brands can't afford to make vague health claims in cold emails. The best outreach focuses on business metrics — cart recovery rates, average order value, subscription uptake — not product efficacy. ColdCopy generates business-focused sequences, not health claims.",
+        "The instinct is to play it safe: no health claims, nothing controversial. But \"premium quality supplements\" gets deleted instantly. ColdCopy focuses on business angles — category gaps, margin opportunity, reorder velocity — not product efficacy. Personalized without the compliance risk.",
     },
     {
-      title: "The market is crowded — personalization is your edge",
+      title: "You don't have time to research every prospect",
       description:
-        "There are 30,000+ supplement brands on Shopify alone. Retail buyers and influencers get pitched daily. The emails that get opened reference the prospect's specific formulations, price points, and positioning — not generic category pitches.",
+        "A good pitch to a gym starts with: what brands do they carry? What's their customer demographic? What's missing from their offer? That's 30 minutes of research per prospect. ColdCopy does it in 8 seconds from their website.",
+      stat: "Personalized cold emails get 2-3x higher reply rates than generic templates",
+      statSource: "Woodpecker, 2024 Cold Email Benchmarks",
     },
   ],
 
   beforeEmail: {
-    subject: "Collaboration opportunity",
-    body: "Hi,\n\nI represent a premium supplement brand and I think your audience would love our products.\n\nWe offer high-quality supplements with competitive wholesale margins. Would you be interested in learning more?\n\nLet me know if you'd like to set up a call.",
+    subject: "Supplement partnership opportunity",
+    body: "Hi Sarah,\n\nI represent [Brand], a premium supplement company. We make high-quality protein, pre-workout, and recovery products.\n\nWe'd love to partner with your gym to offer our products to your members. We offer competitive wholesale margins.\n\nWould you be open to a quick call?",
   },
   afterEmail: {
-    subject: "Your magnesium line is missing a subscription hook",
-    body: "Hey — I was browsing your store and noticed your magnesium glycinate ($38/bottle) is listed as a one-time purchase only.\n\nMost supplement brands at your price point see 40-60% subscription uptake when they offer a 15% subscribe-and-save option on daily-use SKUs.\n\nI put together a 3-step retention framework for your top 5 products based on typical consumption cycles. Want me to send it?",
+    subject: "Your members are asking for a magnesium option",
+    body: "Sarah — I noticed your gym carries 3 pre-workouts and 2 proteins but nothing for recovery or sleep.\n\nMagnesium glycinate is the #1 requested supplement by CrossFit members right now. We supply 14 gyms in your area — average sell-through is 40 units/month.\n\nI can drop off samples this week.",
   },
 
   exampleSequence: [
-    { subject: "Your magnesium line — subscription gap", preview: "Identifies specific SKU and missing subscription option based on their product page" },
-    { subject: "What [competitor brand] changed last quarter", preview: "References a similar supplement brand's subscription model shift" },
-    { subject: "Retention framework for your top 5 SKUs", preview: "Offers a consumption-cycle-based retention plan specific to their catalog" },
-    { subject: "Cart recovery for $38+ supplement orders", preview: "Price-point-specific abandonment strategy based on their AOV" },
-    { subject: "Last note — keeping this short", preview: "Breakup email with a soft CTA and no pressure" },
+    { subject: "Your members are asking for a magnesium option", preview: "References the gym's current supplement mix and identifies the missing recovery category" },
+    { subject: "What [nearby gym] added last quarter", preview: "Social proof from a comparable gym already carrying the product" },
+    { subject: "40 units/month — here's what that looks like for your floor", preview: "Specific revenue projection based on their member volume and traffic" },
+    { subject: "Sample drop-off — no commitment", preview: "Low-friction next step offer with zero pressure to buy" },
+    { subject: "Last note — no hard feelings", preview: "Clean breakup email with an open door for future timing" },
   ],
 
   steps: [
     {
-      title: "Paste a supplement brand URL",
+      title: "Paste the URL of the buyer you want to pitch",
       description:
-        "Drop any supplement or wellness brand URL. ColdCopy reads their product lines, ingredients, pricing tiers, subscription options, and brand story.",
+        "Drop any gym, health food store, retailer, or corporate wellness page into ColdCopy. It reads their current brands, customer focus, and positioning.",
     },
     {
-      title: "Describe your offer",
+      title: "Describe your supplement line and offer",
       description:
-        "Tell ColdCopy what you're pitching: wholesale partnerships, email marketing services, influencer management, fulfillment — whatever your angle is.",
+        "Tell ColdCopy what you make and what you're offering: wholesale terms, sample drop-off, revenue share — whatever your pitch is.",
     },
     {
-      title: "Get 5 emails in 8 seconds",
+      title: "Get 5 personalized emails in 8 seconds",
       description:
-        "ColdCopy writes a full sequence referencing their actual products, price points, and business model. Export to Instantly, Lemlist, or copy/paste to Gmail.",
+        "ColdCopy writes a full sequence referencing the buyer's actual product gaps and customer profile. Copy/paste into Gmail or export as CSV for Instantly or Lemlist.",
     },
   ],
 
   faqs: [
     {
-      question: "Will ColdCopy make health claims in the emails?",
+      question: "Will ColdCopy make health claims about my products?",
       answer:
-        "No. ColdCopy generates business-focused outreach — revenue opportunities, cart recovery, subscription models, and partnership angles. It doesn't generate efficacy claims or medical statements about supplements.",
+        "No. ColdCopy writes business-focused outreach — category gaps, margin opportunity, reorder velocity, and partnership angles. It never generates efficacy claims or medical statements, so you stay on the right side of FTC and platform rules.",
     },
     {
-      question: "Can it reference specific product ingredients?",
+      question: "Can I use this to pitch gym owners and retail buyers?",
       answer:
-        "Yes. ColdCopy reads the product pages and can reference specific ingredients, formulations, and product names. It uses these as context for business angles, not health claims.",
+        "Yes. Paste any gym, health food store, pharmacy, or independent retailer URL. ColdCopy reads their current supplement offering and writes a sequence that references what they carry and what's missing.",
     },
     {
-      question: "Does it work for wholesale outreach to retailers?",
+      question: "What about pitching corporate wellness programs?",
       answer:
-        "Absolutely. Paste the retailer's website URL, describe your supplement line and wholesale terms, and ColdCopy generates a sequence that references the retailer's existing catalog and customer positioning.",
+        "Works great. Paste the company's website, describe your bulk or subscription offer, and ColdCopy generates outreach that references their industry, team size signals, and wellness positioning.",
     },
     {
-      question: "How does ColdCopy handle subscription-based supplement brands?",
+      question: "Can I use ColdCopy for influencer outreach?",
       answer:
-        "ColdCopy detects subscription options, pricing tiers, and product consumption cycles from the prospect's site. It uses this data to write emails that reference specific subscription gaps or opportunities.",
+        "Yes. Paste a creator's website or link-in-bio page. ColdCopy reads their content focus and audience to write a pitch that demonstrates you actually know their work — not a copy-paste PR blast.",
     },
     {
-      question: "What's the cost?",
+      question: "What does ColdCopy cost?",
       answer:
-        "One free sequence with no signup. Then $19/month for unlimited sequences. Cancel anytime.",
+        "One free sequence with no signup. Then $19/month for unlimited sequences across all your prospects. Cancel anytime.",
     },
   ],
 }
